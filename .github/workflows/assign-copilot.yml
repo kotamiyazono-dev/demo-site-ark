@@ -7,8 +7,7 @@ on:
 jobs:
   assign-copilot:
     if: |
-      github.event.label.name == 'approved' &&
-      contains(github.event.issue.labels.*.name, 'ark')
+      github.event.label.name == 'approved-copilot'
     runs-on: ubuntu-latest
     
     permissions:
@@ -64,15 +63,15 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                body: '🤖 Copilotに自動割り当てしました'
+                body: '🤖 Copilot Workspace に割り当てました。処理を開始します。'
               });
-              
             } catch (error) {
+              console.error(error);
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                body: `⚠️ 割り当てに失敗: ${error.message}`
+                body: '⚠️ Copilot の自動アサインに失敗しました。管理者が手動で対応してください。'
               });
               throw error;
             }
