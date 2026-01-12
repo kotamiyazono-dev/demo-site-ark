@@ -1,57 +1,57 @@
 # ARK - Corporate Website
 
-ARKのコーポレートサイトデモです。
+This is a demo of ARK's corporate website.
 
-## 概要
+## Overview
 
-ARKは破壊的イノベーションで世界を変えるテクノロジー企業です。
-自動化とAIの力で、ビジネスの常識を塗り替えます。
+ARK is a technology company that changes the world through disruptive innovation.
+We rewrite the common sense of business through the power of automation and AI.
 
-## プロダクト
+## Products
 
-- **Autopilot** - 自動進化するウェブサイト管理システム
-- **Sentinel** - 次世代AIセキュリティプラットフォーム
-- **Catalyst** - ビジネス自動化プラットフォーム
+- **Autopilot** - Automatically evolving website management system
+- **Sentinel** - Next-generation AI security platform
+- **Catalyst** - Business automation platform
 
-## 技術スタック
+## Technology Stack
 
 - HTML5
-- CSS3 (モダンCSS、グラデーション、アニメーション)
-- JavaScript (バニラJS)
-- レスポンシブデザイン対応
+- CSS3 (Modern CSS, gradients, animations)
+- JavaScript (Vanilla JS)
+- Responsive design support
 
-## ローカル開発
+## Local Development
 
-任意のHTTPサーバーで起動できます：
+Can be launched with any HTTP server:
 
 ```bash
-# Python 3の場合
+# With Python 3
 python -m http.server 8000
 
-# Node.jsのhttp-serverを使う場合
+# Using Node.js http-server
 npx http-server
 ```
 
-## Vercelへのデプロイ
+## Deploy to Vercel
 
 ```bash
-# Vercel CLIをインストール
+# Install Vercel CLI
 npm i -g vercel
 
-# デプロイ
+# Deploy
 vercel
 ```
 
-または、GitHubリポジトリと連携して自動デプロイも可能です。
+Alternatively, you can also set up automatic deployment by connecting with a GitHub repository.
 
-## ページ構成
+## Page Structure
 
-- **HOME** (`index.html`) - ヒーローセクション、ビジョン、プロダクト紹介
-- **PRODUCTS** (`products.html`) - 3つの主要プロダクトの詳細
-- **ABOUT** (`about.html`) - 会社概要、ミッション、チーム紹介
-- **CONTACT** (`contact.html`) - お問い合わせフォーム
+- **HOME** (`index.html`) - Hero section, vision, product introduction
+- **PRODUCTS** (`products.html`) - Details of three main products
+- **ABOUT** (`about.html`) - Company overview, mission, team introduction
+- **CONTACT** (`contact.html`) - Contact form
 
-## ライセンス
+## License
 
 © 2025 ARK. All rights reserved.
 

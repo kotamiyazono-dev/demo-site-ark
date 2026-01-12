@@ -266,7 +266,7 @@ if (contactForm) {
         const data = Object.fromEntries(formData);
 
         // Simulate form submission
-        formMessage.textContent = 'お問い合わせありがとうございます。担当者より折り返しご連絡いたします。';
+        formMessage.textContent = 'Thank you for your inquiry. A representative will contact you shortly.';
         formMessage.className = 'form-message success';
 
         // Reset form
